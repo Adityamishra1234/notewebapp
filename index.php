@@ -74,7 +74,7 @@ $description = $_POST["description"];
         <h5 class="modal-title" id="editModalLabel">Edit Note</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="app.php" method="post">
+      <form action="index.php" method="post">
         <div class="modal-body">
            <input type="hidden" name="SnoEdit" id="SnoEdit">
             <div class="mb-3 my-3">
@@ -159,7 +159,7 @@ if($insert)
 
       <div class="container my-2">
           <h2>Add Your Notes!</h2>
-        <form action="app.php" method="post">
+        <form action="index.php" method="post">
             <div class="mb-3 my-3">
               <label for= "title" >Note's Title</label>
               <input type="text" class="form-control" id= "title" name = "title">
@@ -245,7 +245,7 @@ if($insert)
 
         if (confirm("Are you sure you want to delete this note!")) {
           console.log("yes");
-          window.location = `app.php?delete=${Sno}`;
+          window.location = `index.php?delete=${Sno}`;
           // TODO: Create a form and use post request to submit a form
         }
         else {
